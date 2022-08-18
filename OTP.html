@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      input{
+       
+ margin-top: 30px;
+      }
+      #btn{
+        margin-left: 200px;
+        background-color:#ffd814;
+        border:none;
+        height:30px;
+        width:200px;
+      }
+      form{
+        text-align: center;
+      }
+h1{
+  text-align: center;
+}
+     
+    </style>
+</head>
+<body>
+  <h1>Otp Verification</h1>
+  <form action="">
+    <label for=""> Enter One Time Password : </label>
+  <input id="otp" type="password" placeholder="Enter otp">
+  <br>
+<input id="btn"type="submit" value="Enter your otp here">
+  <br>
+</form>
+</body>
+</html>
+
+
+<script>
+  
+
+  
+document.querySelector("form").addEventListener("submit",myfunction)
+  //  window.location.reload ()
+function myfunction(){
+
+  var otp1=1234
+var enteredotp=document.querySelector("#otp").value
+
+
+if(enteredotp==otp1){
+// alert("Payment Successful")
+// alert("Order Placed")
+window.location.href="finishpage.html"
+
+}
+else{
+  alert("incorrect otp")
+}
+
+}
+
+
+window.location.href="finishpage.html"
+
+
+</script>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input otp</title>
+    <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <style>
+        #maincontainer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* border: 1px solid; */
+            height: 100%;
+            width: 80%;
+            margin: auto;
+            margin-top: 8%;
+        }
+        #container{
+            width: 60%;
+            height: 500px;
+            /* border: 2px solid teal; */
+            display: flex;
+            align-items: center;
+            padding-left: 8.3%;
+        }
+        #right-div{
+            width: 280px;
+            height: 350px;
+            border: 0.1px solid rgb(231, 231, 231);
+            /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            background-image: url("https://media.istockphoto.com/photos/abstract-background-of-polygons-on-white-background-picture-id945690394?k=20&m=945690394&s=170667a&w=0&h=qA3dDqMj5kssYQyeGysnr3v0DyfWP5AyiamemGZCa8c=");
+        }
+        #mid-div{
+            width: 280px;
+            height: 400px;
+            /* border: 1.8px solid purple; */
+            border: 0.1px solid rgb(231, 231, 231);
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            border-radius: 5px;
+        }
+        #left-div{
+            width: 60px;
+            height: 350px;
+            /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+            border: 0.1px solid rgb(231, 231, 231);
+            border-radius: 5px;
+            background-image: url("https://media.istockphoto.com/photos/abstract-background-of-polygons-on-white-background-picture-id945690394?k=20&m=945690394&s=170667a&w=0&h=qA3dDqMj5kssYQyeGysnr3v0DyfWP5AyiamemGZCa8c=");
+        }
+        
+        #properties-ofinput{
+            /* border: 1px solid; */
+            height: 280px;
+            width: 258px;
+            margin: auto;
+            box-sizing: border-box;
+        }
+        .iconstyle1, .iconstyle3,.iconstyle2{
+            font-size: 35px;
+        }
+        #icontext{
+            font-size: 14px;
+            padding-left: 8px;
+            font-weight: bolder;
+            font-weight: 500;
+            color: rgb(47, 47, 47);
+        }
+        #iconspan{
+            margin-right: 20px;
+        }
+        #paratext{
+            font-size: 11.8px;
+            margin-left: 40px;
+            margin-top: -10px;
+            color: #5d5d5d;
+        }
+        .iconstyle1{
+            color: rgb(214, 124, 91);
+        }
+        .iconstyle3{
+            color: rgb(255, 191, 71);
+        }
+        .iconstyle2{
+            color: rgb(69, 158, 183);
+        }
+        /* #properties-ofinput>div{
+            margin-top: 25px;
+        } */
+        #firsttag{
+            font-size: 18px;
+            text-align: center;
+            color: #444444;
+            font-weight: 400;
+        }
+        #cancelicon{
+            font-size: 22px;
+            margin-left: 30px;
+            color: rgb(180, 178, 178);
+        }
+        #loginform>input{
+            text-align: center;
+            /* padding: 10px; */
+            margin: 10px 10px 7px 65px ;
+            width: 50%;
+            height: 32px;
+            border: 0.2px solid #b9b9b9;
+        }
+        #loginform>button{
+            width: 79%;
+            height: 40px;
+            margin-left: 30px;
+            text-align: center;
+        }
+        #continue{
+            background-color: rgb(212, 44, 78);
+            font-size: 16px;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+        }
+        #lockicon{
+            font-size: 60px;
+        }
+        #ptagicon{
+            text-align: center;
+            color: rgb(241, 96, 96);
+        }
+        #suggestion{
+            text-align: center;
+            font-size: 14px;
+            color: #5c5c5c;
+        }
+        #resendotp{
+            text-align: center;
+            margin-top: 0px;
+            font-size: 13.7px;
+            color: rgb(46, 219, 216);
+            cursor: pointer;
+        }
+        #checkingotp{
+            font-size: 12px;
+            color: red;
+            margin-top: -5px;
+            margin-bottom: -8px;
+            text-align: center;
+        }
+        #enteredemaildisplay{
+            font-size: 13px;
+            text-align: center;
+            margin-top: -5px;
+            color: #4f4f4f;
+            font-weight: 400;
+        }
+        
+       
+
+    </style>
+
+</head>
+<body>
+    <div id="maincontainer">
+        <div id="container">
+            <div id="right-div">
+                
+                <div id="properties-ofinput">
+                    <div>
+                        <p id="icontext"><span id="iconspan"><i class="fa-solid fa-location-dot iconstyle1"></i></span>MANAGE YOUR ORDER</p>
+                        <p id="paratext">Track orders, mamage cancellations & returns.</p>
+                    </div>
+                    <div>
+                        <p id="icontext"><span id="iconspan"><i class="fa-solid fa-scroll iconstyle2"></i></span>LIST LOVED ITEMS</p>
+                        <p id="paratext">Keep items you love on a watchlist.</p>
+                    </div>
+                    <div>
+                        <p id="icontext"><span id="iconspan"><i class="fa-solid fa-bell iconstyle3"></i></span>BEST OFFER UPDATES</p>
+                        <p id="paratext">Be first to know about great offers and save.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="mid-div">
+                <form id="loginform">
+                    <p id="firsttag">Login On Snapdeal <span id="cancelicon"><i class="fa-solid fa-xmark"></i></span></p>
+                    <!-- <p id="secondtag">Please provide your Mobile Number or Email to Login/ Sign Up on Snapdeal</p> -->
+
+                    <p id="ptagicon"><span id="lockicon"><i class="fa-solid fa-lock"></i></span></p>
+                    <p id="suggestion">Please enter verification code (OTP) sent to:</p>
+                    <p id="enteredemaildisplay"></p>
+                    
+                    <input type="number" placeholder="Code" id="logindata" required>
+                    <p id="checkingotp"></p>
+                    <br>
+                    <p id="resendotp">Resend OTP</p>
+                    <br>
+                    
+                    <button  value="Continue" id="continue">Continue</button>
+                </form>
+                <br>
+                
+            </div>
+            <div id="left-div"></div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
+
+<script>
+
+    document.querySelector("#loginform").addEventListener("submit", inputOtp);
+
+    var mail = (localStorage.getItem("inputmail"))
+    console.log(mail);
+
+    document.querySelector("#enteredemaildisplay").innerText = mail;
+
+    function inputOtp()
+    {
+        event.preventDefault();
+
+        var code = document.querySelector("#logindata").value;
+
+        if(code === "1234" || code === "5678" || code === "2468" || code === "1357")
+        {
+            window.location.href = "index.html";
+        }
+        else
+        {
+            document.querySelector("#checkingotp").innerText = "Please enter 4 digit verification code";
+        }
+
+    }
+
+
+</script>

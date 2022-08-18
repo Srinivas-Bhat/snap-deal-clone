@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+<script
+    src="https://kit.fontawesome.com/24c494a6b6.js"
+    crossorigin="anonymous"
+  ></script>
+    <style>
+  #navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    padding: 10px;
+  }
+
+      a {
+        text-decoration: none;
+        color:white
+      }
+      #navbar>div>a:hover {
+        color: white;
+      }
+      #navbar>div>a {
+        cursor: pointer;
+      }
+      form{
+          text-align: center;
+      }
+  
+input{
+
+
+    margin-top:30px;
+}
+#input{
+  background-color: #f6cf08;
+}
+h1{
+  text-align: center;
+}
+form{
+        text-align: center;
+        border: 1px solid black;
+        width: 400px;
+        margin:auto;
+        height:300px;
+        border-color: #ffd814;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+
+      }
+
+    </style>
+</head>
+<body>
+
+
+    <div id="navbar">
+        <div><a target="_blank" href="men.html">Men</a></div>
+        <div><a href="women.html">Women</a></div>
+        <div><a href="signup.html">Signup</a></div>
+        <div><a href="login.html">Login</a></div>
+        <div><a href="cart.html"><span><i class="fa-solid fa-cart-shopping"></i></span>Cart</a></div>
+        <div><a href="checkout.html">Checkout</a></div>
+      </div>
+      <h1>Card Details</h1>
+
+    <form action="">
+        <label for="">Card Number :</label>
+    <input id="card" type="number" placeholder="Enter 16 digit card no"/>
+<br>  
+  <label for="">CVV : </label>
+    <input id="cvv" type="password" placeholder=" Enter cvv"/>
+  
+    <br>
+    <label for="">Expiry Date : </label>
+    <input id="exp"  type="month" placeholder="Enter expiry date">
+  <br>
+<label for="">Name : </label>
+<input id="name"  type="text" placeholder="Enter Card Holder Name">
+<br>
+
+    <input id="input" type="submit" value="checkout">
+</form>
+</body>
+</html>
+<script>
+
+//card num,cvv,expiry,otp
+document.querySelector("form").addEventListener("submit", myfunction)
+
+
+// var credentials=JSON.parse(localStorage.getItem("creds"))|| [];
+
+
+
+function myfunction(){
+event.preventDefault()
+console.log("inside function")
+var cardno=1234567891234567;
+var cvv=123;
+var expiry="2022-06"
+var name2="example"
+
+
+    var enteredcardnumber=document.querySelector("#card").value
+ var enteredcvv=document.querySelector("#cvv").value
+ var enteredexpiry=document.querySelector("#exp").value
+ console.log(enteredexpiry);
+var enteredname1=document.querySelector("#name").value
+
+// credentials.push(obj)
+// // console.log(credentials)
+
+// localStorage.setItem("creds",JSON.stringify(credentials))
+
+
+    // console.log(credentials)
+    if(enteredcardnumber==cardno && enteredcvv==cvv && enteredexpiry=="2022-06" && enteredname1==name2){
+  alert("correct card details")
+window.location.href="OTP.html"
+
+  
+}
+else{
+  alert("error")
+}
+
+}
+
+
+
+
+</script>

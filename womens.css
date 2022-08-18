@@ -1,0 +1,150 @@
+
+.trending{
+width: 85%;
+display: flex;
+justify-content: space-between;
+margin: auto;
+margin-top: 40px;
+}
+.trending>div{
+    border: 1px solid grey;
+    padding: 5px 30px 5px 30px;
+    color: #343a3f;
+     text-decoration: none;
+}
+.trending > div>a{
+    color: grey;
+    border: none;
+    text-decoration: none;
+}
+.trending>div:hover{
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+     rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+     background-color: rgba(9, 30, 66, 0.13);
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 15px;
+    margin-left: 50px;
+
+}
+
+hr{
+    width: 90%;
+    margin-bottom:50px;
+
+}
+
+h1{
+    color: #343a3f;
+}
+#top{
+    width: 70%;
+   display: flex;
+    gap: 25px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: auto;
+    margin-left: 200px;
+    margin-top: 10px;
+    justify-content: space-between;
+
+}
+#top > div:nth-child(1) {
+    font-size: 25px;
+    color: #5f5a59;
+    
+}
+#top > div:nth-child(2){
+    color:grey;
+    padding-bottom: 25px;
+}
+
+#top > .sort{ 
+    padding: 5px 30px 5px 30px;
+}
+
+
+.box:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.image{
+    height: 60%;
+    width: auto;
+    display: flex;
+    display: block;
+    margin: auto;
+}
+
+.name{
+    margin-left: 11px;
+    color: #343a3f;
+    margin-top: 10px;
+}
+
+.innerdiv{
+    margin-left: 11px;
+    display: flex;
+    gap: 20px;
+    margin-top: -15px;
+}
+
+.strprice{
+    color: #343a3f;
+   
+}
+
+.price{
+    font-weight: bold;
+    color: #343a3f;
+}
+
+.offdiv{
+    border: 1px solid grey;
+    color: grey;
+    width: 65px;
+    padding: 3px ;
+    margin: auto;
+    
+}
+
+.rating{
+    width: 80px;
+    padding: 25px;
+    margin-top: -40px;
+}
+
+button{
+    color: white;
+    background-color: black;
+   margin-right: 100px;
+
+}
+
+button{
+    display: block;
+    margin: auto;
+    margin-top: -28px;
+}
+
+/***** 2nd part ********/
+
+#main {
+    width: 40%;
+    border: 1px solid;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    padding-left: 50px;
+    margin: auto;
+}
+.div1{
+    margin-left: 0px;
+    line-height: 10px;
+}
+.div1 a{
+    text-decoration: none;
+}

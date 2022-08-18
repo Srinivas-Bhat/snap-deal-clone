@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-color: rgb(248, 246, 246);
+  }
+  /* Navbar related css */
+  
+  
+ 
+  table,
+  td,
+  th {
+    border: 1px solid #ddd;
+    text-align: left;
+    column-width: 400px
+   
+  }
+  
+  table {
+  
+    border-collapse: collapse;
+    width: 100%;
+    margin: auto;
+    color:grey
+    /* margin-top: 50px; */
+  }
+  
+  th,
+  td {
+    padding: 15px;
+  }
+  
+  tr > th {
+    background-color: whitesmoke;
+    color: darkgrey;
+  }
+  .maincontainer{
+margin:auto;
+    /* width:80%; */
+    margin-top:40px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+  }
+  .backbutton{
+    float:right;
+    padding:10px;
+  }
+  .backbutton>a>button{
+   
+  color:white;
+  background-color: black;
+  /* padding:10px; */
+  border-radius:5px;
+  height:30px;
+  width:100px;
+
+  }
+
+  .maincontainer>div>p{
+      font-size:50;
+     /* margin-left:160px; */
+    padding-bottom:20px;
+    padding-top: 10px;
+
+  }
+  .img1{
+    height:150px;
+    width:150px;
+  }
+  #quantity{
+    width:60px;
+    height:30px;
+  }
+  a{
+    text-decoration: none;
+  }
+
+  .button{
+    display:block;
+border:none;
+/* text-align: right;; */
+text-decoration: none;
+color:white;
+background-color:  #e40046;
+    /* margin:auto; */
+    /* position: left; */
+   margin-top:20px;
+font-size: 16px;
+    height:50px;
+    padding:15px;
+    /* padding-bottom:15px; */
+    border-radius: 10px;
+  }
+
+  .buttonalign{
+   float:right;
+   margin-right: 50px;
+  }

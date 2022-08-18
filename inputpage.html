@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input</title>
+    <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+
+    <style>
+        #maincontainer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* border: 1px solid; */
+            height: 100%;
+            width: 80%;
+            margin: auto;
+            margin-top: 8%;
+        }
+        #container{
+            width: 60%;
+            height: 500px;
+            /* border: 2px solid teal; */
+            display: flex;
+            align-items: center;
+            padding-left: 8.3%;
+        }
+        #right-div{
+            width: 280px;
+            height: 350px;
+            border: 0.1px solid rgb(231, 231, 231);
+            /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            background-image: url("https://media.istockphoto.com/photos/abstract-background-of-polygons-on-white-background-picture-id945690394?k=20&m=945690394&s=170667a&w=0&h=qA3dDqMj5kssYQyeGysnr3v0DyfWP5AyiamemGZCa8c=");
+        }
+        #mid-div{
+            width: 280px;
+            height: 400px;
+            /* border: 1.8px solid purple; */
+            border: 0.1px solid rgb(231, 231, 231);
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            border-radius: 5px;
+        }
+        #left-div{
+            width: 60px;
+            height: 350px;
+            /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+            border: 0.1px solid rgb(231, 231, 231);
+            border-radius: 5px;
+            background-image: url("https://media.istockphoto.com/photos/abstract-background-of-polygons-on-white-background-picture-id945690394?k=20&m=945690394&s=170667a&w=0&h=qA3dDqMj5kssYQyeGysnr3v0DyfWP5AyiamemGZCa8c=");
+        }
+        
+        #properties-ofinput{
+            /* border: 1px solid; */
+            height: 280px;
+            width: 258px;
+            margin: auto;
+            box-sizing: border-box;
+        }
+        .iconstyle1, .iconstyle3,.iconstyle2{
+            font-size: 35px;
+        }
+        #icontext{
+            font-size: 14px;
+            padding-left: 8px;
+            font-weight: bolder;
+            font-weight: 500;
+            color: rgb(47, 47, 47);
+        }
+        #iconspan{
+            margin-right: 20px;
+        }
+        #paratext{
+            font-size: 11.8px;
+            margin-left: 40px;
+            margin-top: -10px;
+            color: #5d5d5d;
+        }
+        .iconstyle1{
+            color: rgb(214, 124, 91);
+        }
+        .iconstyle3{
+            color: rgb(255, 191, 71);
+        }
+        .iconstyle2{
+            color: rgb(69, 158, 183);
+        }
+        #properties-ofinput>div{
+            margin-top: 25px;
+        }
+        #firsttag{
+            font-size: 18px;
+            text-align: center;
+            color: #444444;
+            font-weight: 400;
+            margin-left: 8px;
+            /* text-decoration: none; */
+        }
+        #linkingpages{
+            text-decoration: none;
+            color: #444444;
+            font-weight: 400;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #cancelicon{
+            font-size: 22px;
+            margin-left: 20px;
+            color: rgb(180, 178, 178);
+        }
+        #secondtag{
+            font-size: 12px;
+            margin-top: -10px;
+            text-align: center;
+            color: #6c6c6c;
+            padding: 0px 13px 0px 13px;
+        }
+        #loginform>input{
+            text-align: center;
+            /* padding: 10px; */
+            margin: 10px 10px 7px 30px ;
+            width: 75%;
+            height: 40px;
+        }
+        #loginform>button{
+            width: 77%;
+            height: 40px;
+            margin-left: 30px;
+        }
+        #continue{
+            background-color: rgb(212, 44, 78);
+            font-size: 16px;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+        }
+        #logindata{
+            border-radius: 4px;
+            border: 0.01px solid rgb(179, 176, 176);
+        }
+        #fbicon, #googleicon{
+            margin-right: 7px;
+            font-size: 17px;
+        }
+        #alsologinthrough{
+            display: flex;
+            justify-content: space-around;
+        }
+        #alsologinthrough>button{
+            width: 120px;
+            height: 39px;
+        }
+        #alsologin{
+            text-align: center;
+            color: #a5a5a5;
+            font-size: 13px;
+        }
+        #button1{
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+            border: none;
+            background-color: #4267B2;
+            color: white;
+            cursor: pointer;
+        }
+        #button2{
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+            border: none;
+            color: #3e3e3e;
+            cursor: pointer;
+            font-size: 15px;
+            background-color: white;
+        }
+        #checkinput{
+            text-align: center;
+            font-size: 13px;
+            color: red;
+            margin-top: -5px;
+        }
+        
+       
+
+    </style>
+
+</head>
+<body>
+    <div id="maincontainer">
+        <div id="container">
+            <div id="right-div">
+                
+                <div id="properties-ofinput">
+                    <div>
+                        <p id="icontext"><span id="iconspan"><i class="fa-solid fa-location-dot iconstyle1"></i></span>MANAGE YOUR ORDER</p>
+                        <p id="paratext">Track orders, mamage cancellations & returns.</p>
+                    </div>
+                    <div>
+                        <p id="icontext"><span id="iconspan"><i class="fa-solid fa-scroll iconstyle2"></i></span>LIST LOVED ITEMS</p>
+                        <p id="paratext">Keep items you love on a watchlist.</p>
+                    </div>
+                    <div>
+                        <p id="icontext"><span id="iconspan"><i class="fa-solid fa-bell iconstyle3"></i></span>BEST OFFER UPDATES</p>
+                        <p id="paratext">Be first to know about great offers and save.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="mid-div">
+                <form id="loginform">
+                    <p id="firsttag"><a href="inputpage.html" id="linkingpages"> Login</a>/<a href="signin.html" id="linkingpages">Sign Up</a> On Snapdeal <span id="cancelicon"><i class="fa-solid fa-xmark"></i></span></p>
+                    <p id="secondtag">Please provide your Mobile Number or Email to Login/ Sign Up on Snapdeal</p>
+                    
+                    <input type="email,number" placeholder="Mobile Number / Email" id="logindata" min="10" max="25" required>
+                    <p id="checkinput"></p>
+                    <br>
+                    
+                    <button  value="Continue" id="continue">Continue</button>
+                </form>
+                <br>
+                
+                <p id="alsologin">or Login Using</p>
+                <div id="alsologinthrough">
+                    <button id="button1"><span id="fbicon"><a href="https://www.facebook.com/login/" class="anchor"><i class="fa-brands fa-facebook-square"></i></a></span>Facebook</button>
+                    <button id="button2"><span id="googleicon"><a href="https://www.google.com/gmail/"><i class="fa-brands fa-google"></i></a></span>Google</button>
+                </div>
+            </div>
+            <div id="left-div"></div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
+
+<script src="inputpage.js"></script>

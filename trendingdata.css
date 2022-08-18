@@ -1,0 +1,75 @@
+#arrayofobjectscontainer{
+    display: grid;
+    width:80%;
+    margin:auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap:30px;
+    cursor: pointer;
+}
+#arrayofobjectscontainer>div{
+     padding:10px; 
+    font-size: 12px;
+    padding-left: 20px;
+    /* padding:30px; */
+    text-align: left;
+    margin:auto;
+    color:grey;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+box-sizing: border-box;
+
+}
+
+.namedata{
+    /* border:1px solid red; */
+    opacity: .75;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    
+    /* text-align: center; */
+    
+   
+}  
+
+#arrayofobjectscontainer>div:hover{
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px; */
+    transform:scale(1.04)
+
+}
+/* #arrayofobjectscontainer>div:nth-child(1){
+    
+} */
+#arrayofobjectscontainer>div img{
+    display: block;
+    margin:auto;
+    height: 200px;
+    width:100%;
+}
+ #pricediv{
+    display:flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    margin-bottom: 10px;
+ 
+   
+ } 
+ .offer{
+    border:1px solid black;
+ }
+  /* #arrayofobjectscontainer>div>div:nth-child(2)>p:nth-child(3){
+    border: 0.8px;
+}  */
+
+ /* #arrayofobjectscontainer>div>div>:nth-child(2)>span:nth-child(3){ 
+    border:1px solid black;
+   
+}   */
+
+.button{
+    color:white;
+    background-color: black;
+    /* padding:10px; */
+    border-radius:5px;
+    height:30px;
+
+}

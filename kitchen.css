@@ -1,0 +1,196 @@
+h2{
+    text-align: center;
+}
+#up{
+width: 85%;
+height: 160px;
+/* border: 1px solid red; */
+text-align: center;
+display: grid;
+grid-template-columns: repeat(7,1fr);
+grid-template-rows: auto;
+gap: 5px;
+margin: auto;
+padding-bottom: 10px;
+box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+
+.round > img{
+border-radius:70% ;
+}
+#up > div >img {
+border-radius: 50%;
+}
+
+#up > div {
+width: 80%;
+height: 90%;
+/* border: 1px solid; */
+}
+
+#up > div:hover{
+box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+cursor: pointer;
+}
+
+#row2{
+width: 90%;
+height: 400px;
+/* border: 1px solid blue; */
+margin: auto;
+display: flex;
+}
+#row2 > div:nth-child(1){
+/* border: 1px solid red; */
+width: 25%;
+height: 100%;
+background-color: gray;
+}
+
+#new{
+padding-left: 70px;
+padding-top: 20px;
+font-weight: bold;
+font-size: x-large;
+border: 1px solid;
+}
+
+.slider{
+/* border: 1px solid; */
+width: 100%;
+height: 100%;
+background: url(https://n3.sdlcdn.com/imgs/h/s/1/MS_JuicerMixerGrinder_CSF_15_10_18-96bd2.jpg);
+animation: slide 10s infinite;
+}
+@keyframes slide {
+25%{
+    background: url(https://n3.sdlcdn.com/imgs/h/s/1/MS_JuicerMixerGrinder_CSF_15_10_18-96bd2.jpg);
+}
+50%{
+    background: url(https://n1.sdlcdn.com/imgs/h/s/1/MS_GasStoveChimneys_CSF_15_10_18-bc6cc.jpg);
+}
+75%{
+    background: url(https://n3.sdlcdn.com/imgs/h/s/1/MS_JuicerMixerGrinder_CSF_15_10_18-96bd2.jpg);
+}
+100%{
+    background: url(https://n4.sdlcdn.com/imgs/h/s/1/MS_SmallAppliances_CSF_15_10_18-016bd.jpg);
+}
+
+}
+
+#row2 h2{
+color: white;
+}
+#row2 h4{
+text-align: center;
+color: white;
+}
+#row2 h4:hover{
+cursor: pointer;
+background-color: rgb(133, 124, 124);
+}
+
+/* .newlaunch{
+height: 300px;
+width: 90%;
+border: 1px solid red;
+display: grid;
+grid-template-columns: repeat(5,1fr);
+grid-template-rows: auto;
+gap: 10px;
+margin: auto;
+}
+
+
+
+.itemdiv{
+height: 300px;
+width: 90%;
+margin: auto;
+display: grid;
+grid-template-columns: repeat(7,1fr);
+grid-template-rows: auto;
+
+}
+
+.item{
+height: 100%;
+width: auto;
+
+} */
+
+#twobox{
+height: 400px;
+width: 90%;
+/* border: 1px solid green; */
+display: grid;
+grid-template-columns: repeat(2,1fr);
+grid-template-rows: auto;
+gap: 10px;
+margin-top: 10px;
+box-sizing: border-box;
+padding: 40PX;
+margin: auto;
+padding-left: 70px;
+}
+
+.box1{
+height: 100%;
+width: 90%;
+}
+
+.box1 > img{
+border-radius: 10px;
+width: 100%;
+
+}
+
+.box1:hover{
+cursor: pointer;
+}
+
+#bigbox{
+margin-top:20px;
+display: grid;
+grid-template-columns: repeat(5,1fr);
+grid-template-rows: auto;
+gap: 10px;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+/* padding: 30px; */
+/* border: 1px solid; */
+
+}
+#bigbox > div:hover{
+box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+cursor: pointer;
+padding: 20px;
+
+}
+#bigbox > div{
+padding: 20px 30px ;
+margin-bottom: 0px;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+
+.price{
+display: flex;
+justify-content: space-evenly;
+padding-right: 50px;
+}   
+
+#rs{
+font-weight: bolder;
+}
+
+.cart{
+margin-left: 30px;
+font-weight: bolder;
+color: white;
+background-color: black;
+}
+
+.cart:hover{
+cursor: pointer;
+}

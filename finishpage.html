@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>finish page</title>
+    <style>
+        *{
+            text-align: center;
+            margin: auto;
+        }
+        #mainbox{
+            width: 85%;
+            /* height: 500px; */
+            /* border: 1px solid; */
+        }
+        #upperbox{
+            /* border: 1px solid red; */
+            width: 90%;
+            height: 100px;
+            /* display: flex; */
+            margin-bottom: 20px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+        #lowerbox{
+            /* border: 1.5px solid teal; */
+            width: 90%;
+            height: 420px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+        #lowerbox>div{
+            margin-bottom: 20px;
+        }
+        #snaplogo{
+            width: 20%;
+            height: 90px;
+            /* border: 2px solid green; */
+        }
+     
+        #snapname{
+            width: 40%;
+            height: 90px;
+            /* border: 2px solid green; */
+            display: flex;
+        }
+        #hellodiv{
+            width: 40%;
+            height: 50px;
+            /* border: 2px solid green; */
+            padding:10px;
+            box-sizing: border-box;
+            font-size: 19px;
+        }
+        #hellodiv>p{
+            font-size: 28px;
+            color: rgb(127, 127, 127);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        #tnqdiv{
+            width: 70%;
+            height: 80px;
+            /* border: 2px solid brown; */
+            padding: 10px;
+            box-sizing: border-box;
+            font-size: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(58, 58, 58);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        #shipdiv{
+            width: 90%;
+            height: 100px;
+            /* border: 2px solid; */
+            box-sizing: border-box;
+            padding: 16px;
+            font-size: 19px;
+            color: rgb(107, 107, 107);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        #orderdatadiv{
+            width: 89%;
+            height: 70px;
+            display: flex;
+            /* border: 2px solid rgb(209, 28, 58); */
+            display: flex;
+        }
+        #orderno, #date{
+            width: 305px;
+            height: 60px;
+            /* border: 1.3px solid orange; */
+            display: flex;
+        }
+        a{
+            text-decoration: none;
+        }
+        #displaytv{
+            width: 200px;
+            height: 40px;
+            font-size: 20px;
+            color: rgb(69, 65, 65);
+            font-weight: bolder;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+            border: none;
+            background-color: white;
+        }
+        #orderdatadiv>div>p{
+            font-size: 19px;
+            font-weight: 400;
+            color: rgb(80, 80, 80);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        #spanimg{
+            width: 95px;
+            height: 85px;
+        }
+        #snapname>p{
+            font-size: 48px;
+            font-weight: 400;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin-left: -74px;
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <div id="mainbox">
+        <div id="upperbox">
+            <!-- <div id="snaplogo"></div> -->
+             <div id="snapname">
+                 <span><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLGuIPs55GV-NWd9Z-fAMlrWMRhJP_HUxADA&usqp=CAU" alt=""  id="spanimg"></span>
+                 <p id="headder">snapdeal</p>
+             </div>
+        </div>
+        <div id="lowerbox">
+            <div id="hellodiv">
+                <p>Hello,</p>
+            </div>
+            <div id="tnqdiv">
+                <p>Thank you for your order!</p>
+            </div>
+            <div id="shipdiv">
+                Here's a summary of your purchase. When we ship the item we will update with <a href="https://www.snapdeal.com/info/orderStatus">tracking details</a>
+            </div>
+            <div id="orderdatadiv">
+                <div id="orderno">
+                    <p>Order No:</p>
+                    <button id="displaytv">11231515089</button>
+                </div>
+                <div id="date">
+                    <p>Placed on:</p>
+                    <button id="displaytv">April 2, 2022</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

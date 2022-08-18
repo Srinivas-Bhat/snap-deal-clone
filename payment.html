@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #upper{
+            border: 1px solid;
+            color: white;
+            background-color: black;
+            padding-left: 30px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: auto;
+            /* border: 1px solid red; */
+        }
+
+        #payment{
+           width: 100%;
+           height: 600px;
+           /* border: 1px solid red; */
+           display: flex;
+        }
+        #payment > div:nth-child(1){
+            /* border: 1px solid; */
+            width: 20%;
+            height: 590px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        }
+
+        .card{
+            padding-left: 30px;
+            /* box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset; */
+            border: 1px solid;
+            
+        }
+
+        .card:hover{
+            box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+            /* height: 40px; */
+        }
+
+        #carddata{
+            /* border: 1px solid; */
+            height: 590px;
+            width: 60%;
+            box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+        }
+
+        #bankoffer{
+            width: auto;
+            height: 200px;
+            /* border: 1px solid; */
+            box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+            color: #01baf2;
+            padding-left: 30px;
+        }
+
+        #bankoffer > p{
+            color: gray;  
+            /* font-size:12px; */
+            
+        }
+
+        #bankoffer > h3{
+            padding-bottom: -20px;
+        }
+
+        #bankoffer > div{
+            /* border: 1px solid; */
+            width: 250px;
+            height: 120px;
+            display: flex;
+        }
+
+        #discount > div{
+            /* border: 1px solid; */
+            width: 100%;
+            height: 100%;
+            background-color: teal;
+            color: white;
+            margin-top: -15px;
+        }
+
+        #discount img{
+            width: 70px;
+        }
+  
+
+        #discount > div:nth-child(1){
+            width: 40%;
+        }
+
+        #text{
+            /* border: 1px solid; */
+            height: 40px;
+            margin-top: 10px;
+        }
+
+        #text > h3{
+            padding-left: 30px;
+
+        }
+
+        form{
+        text-align: center;
+        border: 1px solid black;
+        width: 400px;
+        margin:auto;
+        height:220px;
+        border-color: #ffd814;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+
+      }
+
+      form{
+          padding-top: 40px;
+          
+      }
+      input{
+          margin-top: 15px;
+      }
+      #input{
+          background-color: #e40046;
+          color:white;
+          padding: 5px;
+      }
+  
+    </style>
+</head>
+<body>
+    <div id="upper"><h2>Make Payment</h2></div>
+    <div id="payment">
+        <div id="paymode">
+            <div class="card">
+                <a href=""><h3>Credit Card</h3></a>
+            </div>
+            <div class="card">
+                <a href=""><h3>Debit Card</h3></a>
+            </div>
+            <div class="card">
+                <a href=""><h3>Net Banking</h3></a>
+            </div>
+            <div class="card">
+                <a href=""><h3>Cash On Delivery</h3></a>
+            </div>
+            <div class="card">
+                <a href=""><h3>EMI</h3></a>
+            </div>
+            <div class="card">
+                <a href=""><h3><e->Gift Voucher</e-></h3></a>
+            </div>
+            <div class="card">
+                <a href=""><h3>UPI</h3></a>
+            </div>
+        </div>
+        <div id="carddata">
+            <div id="bankoffer">
+              <h3 style="color: black;">1 Bank Offer</h3>   
+              <p>Get Discount on payment modes</p>
+              <div id="discount">
+                  <div>
+                      <img src="https://n2.sdlcdn.com/imgs/e/o/f/default-ecb09.png" alt="">
+                  </div>
+                  <div id="distext">
+                      <p>20% instant discount</p>
+                      <span>Using Ujjvan Debit Cards</span>
+                      <p>Rs 53 OFF - TNC</p>
+                  </div>
+              </div>
+            </div>
+            <div id="text"><h3>Pay Using Debit Card</h3></div>
+            <div>
+                <form action="">
+                    <label for="">Card Number :</label>
+                <input id="card" type="number" placeholder="Enter 16 digit card no"/>
+            <br>  
+              <label for="">CVV : </label>
+                <input id="cvv" type="password" placeholder=" Enter cvv"/>
+              
+                <br>
+                <label for="">Expiry Date : </label>
+                <input id="exp"  type="month" placeholder="Enter expiry date">
+              <br>
+            <label for="">Name : </label>
+            <input id="name"  type="text" placeholder="Enter Card Holder Name">
+            <br>
+            
+                <input id="input11" type="submit" value="checkout">
+            </form>
+            </div>
+            
+        </div>
+        
+    </div>
+
+    <!-- <p>heading</p> -->
+    
+</body>
+</html>
+
+<script>
+    document.querySelector("form").addEventListener("submit", myfunction)
+
+
+// var credentials=JSON.parse(localStorage.getItem("creds"))|| [];
+
+
+
+function myfunction(){
+event.preventDefault()
+console.log("inside function")
+var cardno=1234567891234567;
+var cvv=123;
+var expiry="2022-06"
+var name2="example"
+
+
+    var enteredcardnumber=document.querySelector("#card").value
+ var enteredcvv=document.querySelector("#cvv").value
+ var enteredexpiry=document.querySelector("#exp").value
+ console.log(enteredexpiry);
+var enteredname1=document.querySelector("#name").value
+
+// credentials.push(obj)
+// // console.log(credentials)
+
+// localStorage.setItem("creds",JSON.stringify(credentials))
+
+
+    // console.log(credentials)
+    if(enteredcardnumber==cardno && enteredcvv==cvv && enteredexpiry=="2022-06" && enteredname1==name2){
+<<<<<<< HEAD
+  
+  alert("otp sent to your email & mobile no.")
+  alert("payment successfull")
+=======
+  alert("correct card details")
+  alert("Payment Successful");
+>>>>>>> master
+window.location.href="finishpage.html"
+
+  
+}
+else{
+  alert("error")
+}
+
+}
+
+</script>

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signin part</title>
+    <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+
+    <style>
+        #maincontainer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* border: 1px solid; */
+            height: 100%;
+            width: 80%;
+            margin: auto;
+            margin-top: 8%;
+        }
+        #container{
+            width: 60%;
+            height: 500px;
+            /* border: 2px solid teal; */
+            display: flex;
+            align-items: center;
+            padding-left: 8.3%;
+        }
+        #right-div{
+            width: 280px;
+            height: 350px;
+            border: 0.1px solid rgb(231, 231, 231);
+            /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            background-image: url("https://media.istockphoto.com/photos/abstract-background-of-polygons-on-white-background-picture-id945690394?k=20&m=945690394&s=170667a&w=0&h=qA3dDqMj5kssYQyeGysnr3v0DyfWP5AyiamemGZCa8c=");
+        }
+        #mid-div{
+            width: 280px;
+            height: 600px;
+            /* border: 1.8px solid purple; */
+            border: 0.1px solid rgb(231, 231, 231);
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            border-radius: 5px;
+        }
+        #left-div{
+            width: 60px;
+            height: 350px;
+            /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+            border: 0.1px solid rgb(231, 231, 231);
+            border-radius: 5px;
+            background-image: url("https://media.istockphoto.com/photos/abstract-background-of-polygons-on-white-background-picture-id945690394?k=20&m=945690394&s=170667a&w=0&h=qA3dDqMj5kssYQyeGysnr3v0DyfWP5AyiamemGZCa8c=");
+        }
+        
+        #properties-ofinput{
+            /* border: 1px solid; */
+            height: 280px;
+            width: 258px;
+            margin: auto;
+            box-sizing: border-box;
+        }
+        .iconstyle1, .iconstyle3,.iconstyle2{
+            font-size: 35px;
+        }
+        #icontext{
+            font-size: 14px;
+            padding-left: 8px;
+            font-weight: bolder;
+            font-weight: 500;
+            color: rgb(47, 47, 47);
+        }
+        #iconspan{
+            margin-right: 20px;
+        }
+        #paratext{
+            font-size: 11.8px;
+            margin-left: 40px;
+            margin-top: -10px;
+            color: #5d5d5d;
+        }
+        .iconstyle1{
+            color: rgb(214, 124, 91);
+        }
+        .iconstyle3{
+            color: rgb(255, 191, 71);
+        }
+        .iconstyle2{
+            color: rgb(69, 158, 183);
+        }
+        #properties-ofinput>div{
+            margin-top: 25px;
+        }
+        #firsttag{
+            font-size: 18px;
+            /* text-align: center; */
+            color: #444444;
+            font-weight: 400;
+            /* float: left; */
+            margin-left: 25px;
+        }
+        #cancelicon{
+            font-size: 22px;
+            /* margin-left: 70px; */
+            float: right;
+            margin-right: 35px;
+            color: rgb(180, 178, 178);
+        }
+        #secondtag{
+            font-size: 12px;
+            margin-top: -10px;
+            margin-left: 10px;
+            /* text-align: center; */
+            color: #6c6c6c;
+            padding: 0px 13px 0px 13px;
+        }
+        #loginform>input{
+            /* text-align: center; */
+            padding-left: 8px;
+            margin: 10px 10px 7px 30px ;
+            width: 75%;
+            height: 25px;
+            border: 0.1px solid grey;
+        }
+        #loginform>#continue{
+            width: 77%;
+            height: 32px;
+            margin-left: 30px;
+        }
+        #continue{
+            background-color: rgb(212, 44, 78);
+            font-size: 15px;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+        }
+        #logindata{
+            /* border-radius: 4px; */
+            border: 0.01px solid rgb(85, 85, 85);
+        }
+        #fbicon, #googleicon{
+            margin-right: 7px;
+            font-size: 17px;
+        }
+       
+        #alsologinthrough{
+            display: flex;
+            justify-content: space-around;
+        }
+        #alsologinthrough>button{
+            width: 120px;
+            height: 39px;
+        }
+        #alsologin{
+            text-align: center;
+            color: #a5a5a5;
+            font-size: 13px;
+        }
+        #button1{
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+            border: none;
+            background-color: #4267B2;
+            color: white;
+            cursor: pointer;
+        }
+        #button2{
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+            border: none;
+            color: #3e3e3e;
+            cursor: pointer;
+            font-size: 15px;
+            background-color: white;
+        }
+        #checkinput{
+            text-align: center;
+            font-size: 13px;
+            color: red;
+            margin-top: -5px;
+        }
+        #checkpassword{
+            font-size: 12px;
+            margin-top: -1px;
+            color: #7d7d7d; 
+            padding: 0px 18px 0px 18px;
+        }
+        #term-cond{
+            font-size: 11px;
+            margin-top: 6px;
+            text-align: center;
+            color: #7d7d7d;
+        }
+        #keeplogedin{
+            height: 22px;
+            width: 22px;
+            margin: -10px 15px 11px;
+           background-color: #2d2c2c;
+        }
+        #loggedinspan{
+            font-size: 13px;
+            color: #5d5d5d;
+        }
+       #keeplogedin:hover{
+           background-color: #505050;
+       }
+       .tick{
+           color: white;
+       }
+       #checkingptag{
+           font-size: 10.7px;
+           margin-top: -5px;
+           margin-bottom: -8px;
+           text-align: center;
+           color: red;
+       }
+
+    </style>
+
+</head>
+<body>
+    <div id="maincontainer">
+        <div id="container">
+            <div id="right-div">
+                
+                <div id="properties-ofinput">
+                    <div>
+                        <p id="icontext"><span id="iconspan"><i class="fa-solid fa-location-dot iconstyle1"></i></span>MANAGE YOUR ORDER</p>
+                        <p id="paratext">Track orders, mamage cancellations & returns.</p>
+                    </div>
+                    <div>
+                        <p id="icontext"><span id="iconspan"><i class="fa-solid fa-scroll iconstyle2"></i></span>LIST LOVED ITEMS</p>
+                        <p id="paratext">Keep items you love on a watchlist.</p>
+                    </div>
+                    <div>
+                        <p id="icontext"><span id="iconspan"><i class="fa-solid fa-bell iconstyle3"></i></span>BEST OFFER UPDATES</p>
+                        <p id="paratext">Be first to know about great offers and save.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="mid-div">
+                <form id="loginform">
+                    <p id="firsttag">Sign Up<span id="cancelicon"><i class="fa-solid fa-xmark"></i></span></p>
+                    <p id="secondtag">create an account on Snapdeal</p>
+                    
+                    <input type="email" placeholder="Enter Email" id="logindata" required>
+                    <!-- <p id="checkingptag"></p> -->
+                    <br>
+                    <input type="number" placeholder="+91    Mobile Number" id="signin-mobnum">
+                    <br>
+                    <input type="name" placeholder="Name" id="signinname">
+                    <br>
+                    <input type="number" placeholder="DOB (DD/MM/YYYY)" id="dob">
+                    <br>
+                    <input type="password" placeholder="Password" id="password">
+                    <p id="checkpassword">Password should have a minimum of 6 characters, at least 1 numeric and 1 alphabet</p>
+                    <br>
+                    <button id="keeplogedin"> <span><i class="fa-solid fa-check tick"></i></span></button><span  id="loggedinspan"> Keep me logged in</span>
+                    
+                    <button  value="Continue" id="continue">CONTINUE</button>
+                    <p id="term-cond">By registering, I agree to <a href="https://www.snapdeal.com/page/terms-of-sale"> Terms & Conditions</a></p>
+                </form>
+                <br>
+                
+                <p id="alsologin">or Login Using</p>
+                <div id="alsologinthrough">
+                    <button id="button1"><span id="fbicon"><a href="https://www.facebook.com/login/" id="anchor"><i class="fa-brands fa-facebook-square"></i></a></span>Facebook</button>
+                    <button id="button2"><span id="googleicon"><a href="https://www.google.com/gmail/"><i class="fa-brands fa-google"></i></a></span>Google</button>
+                </div>
+            </div>
+            <div id="left-div"></div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
+
+
+<script>
+    document.querySelector("#loginform").addEventListener("submit", signuppage);
+
+    function signuppage()
+    {
+        event.preventDefault();
+        // console.log("im in")
+
+        var email = document.querySelector("#logindata").value;
+        var mob = document.querySelector("#signin-mobnum").value;
+        var name = document.querySelector("#signinname").value;
+        var dob = document.querySelector("#dob").value;
+        var pass = document.querySelector("#password").value;
+
+        console.log(email, mob, name, dob, pass);
+
+
+       
+
+        
+
+        if(email === "srinivasbhat0105@gmail.com" || email === "bhavesh@gmail.com" || email === "prem@gmail.com")
+        {
+            if(mob.length == 10 && dob.length == 8)
+            {
+                if(pass.length >= 6)
+                {
+                    alert("Sign Up Successful");
+                    window.location.href = "inputpage.html";
+                }
+            }
+        }
+        else
+        {
+            alert("Invalid Name or Password")
+        }
+          
+        
+    }
+
+
+
+</script>
+
+
+
+
+ <!-- function checkmail(value)
+ {
+     if(!value == "srinivasbhat0105@gmail.com" || !value == "bhavesh@gmail.com" || !value == "prem@gmail.com")
+     {
+        window.location.href = "signup.html";
+     }
+     else{
+         window.location.href = "inputOtp.html";
+     }
+ } -->
