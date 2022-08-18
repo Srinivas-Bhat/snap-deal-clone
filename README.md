@@ -6,7 +6,7 @@
 
 # Snapdeal-Clone
 
-## This is the clone of an E-commerce website, Snapdeal. Snapdeal is an Indian e-commerce company, based in New Delhi, India. It was founded in February 2010 by Kunal Bahl and Rohit Bansal. Snapdeal is one of the largest online marketplaces in India.
+### This is the clone of an E-commerce website, Snapdeal. Snapdeal is an Indian e-commerce company, based in New Delhi, India. It was founded in February 2010 by Kunal Bahl and Rohit Bansal. Snapdeal is one of the largest online marketplaces in India.
 
 
 ## Technologies Used :
