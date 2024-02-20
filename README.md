@@ -95,4 +95,4 @@
 
 ## Deployed Link:
 
-https://kaleidoscopic-basbousa-9373f1.netlify.app/
+https://snapdeal-site-clone.netlify.app/
