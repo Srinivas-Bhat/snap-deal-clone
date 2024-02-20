@@ -95,4 +95,4 @@
 
 ## Deployed Link:
 
-https://snapdeal-site-clone.netlify.app/
+https://snap-deal-clone.vercel.app/
